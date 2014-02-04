@@ -116,14 +116,24 @@
     #aside {
         display: none;
     }
-	
+}
 	/** Printing **/
 	@media print {
     #header, #navigation, #footer {
         display: none;
     }
-	
+	    #content {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #aside {
+        float: none;
+        display: block;
+        page-break-inside: avoid;
+    }
 }
+
+
 
     </style>
 	</head>
