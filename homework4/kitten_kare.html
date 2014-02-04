@@ -85,7 +85,7 @@
 	padding: 20px;
 	height: 1%;
 }
-
+/** Small Phone**/
 @media (max-width: 450px) {
     
 	#header {
@@ -116,7 +116,13 @@
     #aside {
         display: none;
     }
-
+	
+	/** Printing **/
+	@media print {
+    #header, #navigation, #footer {
+        display: none;
+    }
+	
 }
 
     </style>
